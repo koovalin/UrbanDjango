@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игры</title>
+</head>
+<body>
+    <h1>Магазин</h1>
+    <ul>
+        {% for item, button in items.items %}
+            <li>{{ item }} <button>{{ button }}</button></li>
+        {% endfor %}
+    </ul>
+
+    <button id="homeButton"><b>Вернуться на главную страницу</b></button>
+        <script>
+            const homeButton = document.getElementById('homeButton');
+            homeButton.addEventListener('click', () => {
+                window.location.href = '/';
+            });
+        </script>
+
+    <button id="cartButton"><b>Перейти в корзину</b></button>
+        <script>
+            const cartButton = document.getElementById('cartButton');
+            cartButton.addEventListener('click', () => {
+                window.location.href = '/task3/cart';
+            });
+        </script>
+
+
+</body>
+</html>

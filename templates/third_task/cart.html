@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+</head>
+<body>
+    <h1>Корзина</h1>
+    <p>Здесь вы можете увидеть товары, которые вы добавили в корзину.</p>
+    <p>Пока корзина пуста, но вы можете добавить товары из магазина!</p>
+
+    <button id="homeButton"><b>Вернуться на главную страницу</b></button>
+        <script>
+            const homeButton = document.getElementById('homeButton');
+            homeButton.addEventListener('click', () => {
+                window.location.href = '/';
+            });
+        </script>
+
+    <button id="shopButton"><b>Перейти в магазин</b></button>
+        <script>
+            const cartButton = document.getElementById('shopButton');
+            cartButton.addEventListener('click', () => {
+                window.location.href = '/task3/shop';
+            });
+        </script>
+</body>
+</html>
