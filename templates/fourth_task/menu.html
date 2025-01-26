@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block pagename %}Игры{% endblock %}</title>
+</head>
+<body>
+<nav>
+    <h2><a href="/">Главная</a>
+        <a href="/task4/shop/">Магазин</a>
+        <a href="/task4/cart/">Корзина</a></h2>
+</nav>
+<div>
+    {% block content %}
+    {% endblock %}
+</div>
+
+
+<footer>
+    <p>2024 My Webpage. All rights reserved.</p>
+</footer>
+</body>
+</html>

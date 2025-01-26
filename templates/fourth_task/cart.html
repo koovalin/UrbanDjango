@@ -1,0 +1,25 @@
+{% extends 'fourth_task/menu.html' %}
+
+{% block pagename %}Корзина{% endblock %}
+
+{% block content %}
+<h1>Корзина</h1>
+<p>Здесь вы можете увидеть товары, которые вы добавили в корзину.</p>
+<p>Пока корзина пуста, но вы можете добавить товары из магазина!</p>
+
+
+<button id="homeButton"><b>Вернуться на главную страницу</b></button>
+<script>
+    const homeButton = document.getElementById('homeButton');
+    homeButton.addEventListener('click', () => {
+        window.location.href = '/';
+    });
+</script>
+<button id="shopButton"><b>Перейти в магазин</b></button>
+<script>
+    const cartButton = document.getElementById('shopButton');
+    cartButton.addEventListener('click', () => {
+        window.location.href = '/task4/shop';
+    });
+</script>
+{% endblock %}

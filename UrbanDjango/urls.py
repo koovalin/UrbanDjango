@@ -24,6 +24,7 @@ urlpatterns = [
        path('admin/', admin.site.urls),
        path('', index),
        path('index/', TemplateView.as_view(template_name='index2.html')),
-       path('task2/', include('task2.urls')),  # Подключение маршрутов приложения task2
-       path('task3/', include('task3.urls')),  # Подключение маршрутов приложения task3
+       # path('task2/', include('task2.urls')),  # Подключение маршрутов приложения task2
+       # path('task3/', include('task3.urls')),  # Подключение маршрутов приложения task3
+       path('task4/', include('task4.urls')),  # Подключение маршрутов приложения task4
 ]
