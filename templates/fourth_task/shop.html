@@ -11,21 +11,4 @@
     </li>
     {% endfor %}
 </ul>
-
-
-
-<button id="homeButton"><b>Вернуться на главную страницу</b></button>
-<script>
-    const homeButton = document.getElementById('homeButton');
-    homeButton.addEventListener('click', () => {
-        window.location.href = '/';
-    });
-</script>
-<button id="cartButton"><b>Перейти в корзину</b></button>
-<script>
-    const cartButton = document.getElementById('cartButton');
-    cartButton.addEventListener('click', () => {
-        window.location.href = '/task4/cart';
-    });
-</script>
 {% endblock %}
