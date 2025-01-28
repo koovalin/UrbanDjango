@@ -17,14 +17,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from example1.views import index
-from django.views.generic import TemplateView
 
 
 urlpatterns = [
        path('admin/', admin.site.urls),
        path('', index),
-       path('index/', TemplateView.as_view(template_name='index2.html')),
-       # path('task2/', include('task2.urls')),  # Подключение маршрутов приложения task2
-       # path('task3/', include('task3.urls')),  # Подключение маршрутов приложения task3
-       path('task4/', include('task4.urls')),  # Подключение маршрутов приложения task4
+       # path('task2/', include('task2.urls')),
+       # path('task3/', include('task3.urls')),
+       # path('task4/', include('task4.urls')),
+       path('task5/', include('task5.urls')),
 ]
