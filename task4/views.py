@@ -7,8 +7,9 @@ def index(request):
 
 
 def shop(request):
-    games = ['Atomic Heart', 'Cyberpunk 2077', 'Doom Eternal']
-    return render(request, 'fourth_task/shop.html', {'pagename': 'Магазин', 'games': games})
+    items = {'games': ['Cyperpunk 2077', 'Crysis', 'Crysis 2', 'Crysis 3', 'The Eler Scrolls V: Skyrim',
+                       'The Elder Scrolls IV: Oblivion', 'Atomic Heart']}
+    return render(request, 'fourth_task/shop.html', {'pagename': 'Магазин', 'games': items['games']})
 
 
 def cart(request):
